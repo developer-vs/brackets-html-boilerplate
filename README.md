@@ -1,6 +1,6 @@
 # HTML Boilerplate
 
-This app displays basic HTML template, similar to Sublime. Use Ctrl-Shift-I to insert template or go to the menu Edit -> HTML Boilerplate."
+This app displays basic HTML template, similar to Sublime. Use Ctrl-Alt-I to insert template or go to the menu Edit -> HTML Boilerplate."
 
 <!DOCTYPE html>
 <html>
