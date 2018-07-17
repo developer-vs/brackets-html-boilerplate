@@ -9,7 +9,7 @@ define(function (require, exports, module) {
         var editor = EditorManager.getFocusedEditor();
         if (editor) {
             var template =  "<!DOCTYPE html>\n"+
-                            "<html\n"+
+                            "<html>\n"+
                             "<head>\n"+                            
                             "\t<title></title>\n"+
                             "</head>\n"+
