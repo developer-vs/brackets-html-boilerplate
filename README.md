@@ -10,13 +10,14 @@ This app displays basic HTML template, similar to Sublime. Use Ctrl-Shift-I to i
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+    <title></title>
 </head>
 <body>
 
 </body>
 </html>
 ```
+
 
 ### License
 
