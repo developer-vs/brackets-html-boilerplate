@@ -4,7 +4,7 @@
 ## HTML Boilerplate
 
 This extension displays basic HTML template, similar to Sublime. 
-Use "Ctrl-Alt-I" to insert template or go to the menu Edit -> HTML Boilerplate."
+Use **"Ctrl-Alt-I"** to insert template or go to the menu **Edit** -> **HTML Boilerplate**."
 
 > Example of template>
 ```
@@ -23,5 +23,6 @@ Use "Ctrl-Alt-I" to insert template or go to the menu Edit -> HTML Boilerplate."
 ## Installation ##
 
 1. Run Brackets.
-2. Select _File > Extension Manager..._
-3. Find “HTML Boilerplate” extension and click “Install” button
+2. Search for **File** > **Extension Manager**..._
+3. Find “HTML Boilerplate” extension. 
+4. Click “Install” button.
