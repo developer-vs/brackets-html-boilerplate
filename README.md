@@ -6,7 +6,7 @@
 This extension displays basic HTML template, similar to Sublime. 
 
 
-> Example of template>
+> Example of template
 ```
 <!DOCTYPE html>
 <html>
