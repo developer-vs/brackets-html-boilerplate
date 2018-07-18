@@ -3,24 +3,18 @@ define(function (require, exports, module) {
     // package-style naming to avoid collisions
     var COMMAND_ID = "brackets_html_boilerplate.developer-vs";
     
-    var commandManager = brackets.getModule("command/CommandManager");
-    var editorManager = brackets.getModule("editor/EditorManager");
-    var keyBindingManager = brackets.getModule("command/KeyBindingManager");
+    var CommandManager = brackets.getModule("command/CommandManager");
+    var EditorManager = brackets.getModule("editor/EditorManager");
+    var KeyBindingManager = brackets.getModule("command/KeyBindingManager");
     
     // Menu
-    var menus = brackets.getModule("command/Menus");
-
-    var menu = menus.getMenu(menus.AppMenuBar.EDIT_MENU); 
-    menu.addMenuDivider();
-    menu.addMenuItem(COMMAND_ID);
-    menu.addMenuDivider();
-
-    // var contextMenu  = Menus.getContextMenu(Menus.ContextMenuIds.EDITOR_MENU);
-    // contextMenu.addMenuItem(COMMAND_ID);
+    var Menus = brackets.getModule("command/Menus");
+    var menu = Menus.getMenu(Menus.AppMenuBar.EDIT_MENU); 
+    var contextMenu  = Menus.getContextMenu(Menus.ContextMenuIds.EDITOR_MENU);    
   
     function htmlTemplate() {
 
-        var editor = editorManager.getFocusedEditor();
+        var editor = EditorManager.getFocusedEditor();
 
         if (editor) {
             var template = "<!DOCTYPE html>\n" +
@@ -32,16 +26,18 @@ define(function (require, exports, module) {
                 "</body>\n" +
                 "</html>";
 
-            var inPos = editor.getCursorPos();
-            editor.document.replaceRange(template, inPos);
+            editor.document.replaceRange(template, editor.getCursorPos());
         }
     };
      
-    commandManager.register("HTML Boilerplate", COMMAND_ID, htmlTemplate);
+    CommandManager.register("HTML Boilerplate", COMMAND_ID, htmlTemplate);
+    menu.addMenuDivider();
+    menu.addMenuItem(COMMAND_ID);
+    contextMenu.addMenuItem(COMMAND_ID);
 
     // (Note: "Ctrl" is automatically mapped to "Cmd" on Mac)
-    keyBindingManager.addBinding(COMMAND_ID, "Ctrl-Alt-I", "mac");
-    keyBindingManager.addBinding(COMMAND_ID, "Ctrl-Alt-I", "win"); 
-    keyBindingManager.addBinding(COMMAND_ID, "Ctrl-Alt-I", "linux");
+    KeyBindingManager.addBinding(COMMAND_ID, "Ctrl-Alt-I", "mac");
+    KeyBindingManager.addBinding(COMMAND_ID, "Ctrl-Alt-I", "win"); 
+    KeyBindingManager.addBinding(COMMAND_ID, "Ctrl-Alt-I", "linux");
     
 });
