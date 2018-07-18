@@ -2,7 +2,7 @@
     "name": "html-boilerplate",
     "title": "HTML Boilerplate",
     "version": "1.0.2",
-    "description": "This extension displays basic HTML template, similar to Sublime. Use "Ctrl-Alt-I" to insert template or go to the menu Edit -> HTML Boilerplate.",
+    "description": "This extension displays basic HTML template, similar to Sublime. Use Ctrl-Alt-I to insert template or go to the menu Edit -> HTML Boilerplate.",
     "homepage": "https://github.com/developer-vs/brackets_html_boilerplate",    
     "author": "vs (https://github.com/developer-vs)",
     "license": "MIT",
