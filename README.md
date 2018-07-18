@@ -23,6 +23,6 @@ Use **"Ctrl-Alt-I"** to insert template or go to the menu **Edit** -> **HTML Boi
 ## Installation ##
 
 1. Run Brackets.
-2. Search for **File** > **Extension Manager**..._
+2. Search for **File** > **Extension Manager**...
 3. Find “HTML Boilerplate” extension. 
 4. Click “Install” button.
