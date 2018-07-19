@@ -35,4 +35,6 @@ This extension displays basic HTML template, similar to Sublime.
 ## How to use
 
 1. Go to the menu **Edit** -> **HTML Boilerplate**, or
-2. Press **Ctrl-Alt-I**
+2. Press **Ctrl-Alt-I**, or
+3. Use Toolbar button, or
+4. Through Context Menu in the edit field area
