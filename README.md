@@ -3,7 +3,7 @@
 
 ## HTML Boilerplate
 
-This extension displays basic HTML template, similar to Sublime. 
+This is an extension for the <a href="http://brackets.io/">Brackets</a> code editor that displays a basic HTML template, similar to Sublime. 
 
 
 > Example of template
