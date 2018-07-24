@@ -3,7 +3,7 @@
 
 ## HTML Boilerplate
 
-This is an extension for the <a href="http://brackets.io/">Brackets</a> code editor that displays a basic HTML template, similar to Sublime. 
+This is an extension for the <a href="http://brackets.io/">Brackets</a> code editor which allows you to insert an HTML template, similar to Sublime. 
 
 
 > Example of template
@@ -24,7 +24,7 @@ This is an extension for the <a href="http://brackets.io/">Brackets</a> code edi
 #### Git Clone
 
 1. Under main menu select **Help > Show Extensions Folder**
-2. Git clone this repository inside the folder **user**.
+2. Git clone this repository inside the folder **user**
 
 #### Extension Manager
 
@@ -34,7 +34,7 @@ This is an extension for the <a href="http://brackets.io/">Brackets</a> code edi
 
 ## How to use
 
-1. Go to the menu **Edit** -> **HTML Boilerplate**, or
-2. Press **Ctrl-Alt-I**, or
+1. Type 'html' and hit the 'Tab' key, or
+2. Go to the menu **Edit** -> **HTML Boilerplate**, or
 3. Use Toolbar button, or
-4. Through Context Menu in the edit field area
+4. Through Context Menu in the edit field area choose "HTML Boilerplate"
