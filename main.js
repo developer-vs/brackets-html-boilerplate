@@ -17,6 +17,16 @@ define(function (require, exports, module) {
     var template          = require('text!templates/html5.html');
 
 
+    function replaceSelectionForEmptyLine() {
+
+        var editor = EditorManager.getFocusedEditor();
+
+        try {
+            var selection = editor.getSelection();
+            editor.document.replaceRange(template, selection.start, selection.end);
+        } catch (err) {}
+    }
+
     function replaceSelection(editor) {
         try {
             var selection = editor.getSelection();
@@ -91,7 +101,7 @@ define(function (require, exports, module) {
         .attr('href', '#')
         .attr('title', 'HTML Boilerplate')
         .on('click', function () {
-            expandWithTab();
+            replaceSelectionForEmptyLine();
         })
         .appendTo($('#main-toolbar .buttons'));
 });
