@@ -16,6 +16,14 @@ define(function (require, exports, module) {
     // HTML 5 template
     var template          = require('text!templates/html5.html');
 
+    function replaceSelectionOnSpaces() {
+      var editor = EditorManager.getFocusedEditor();
+
+      try {
+          var selection = editor.getSelection();
+          editor.document.replaceRange('    ', selection.start, selection.end);
+      } catch (err) {}
+    }
 
     function replaceSelectionForEmptyLine() {
 
@@ -26,6 +34,7 @@ define(function (require, exports, module) {
             editor.document.replaceRange(template, selection.start, selection.end);
         } catch (err) {}
     }
+
 
     function replaceSelection(editor) {
         try {
@@ -56,17 +65,58 @@ define(function (require, exports, module) {
                     var beginningOfLine = {line: currentCursorPosition.line, ch: 0};
                     var textBeforeCursor = editor.document.getRange(beginningOfLine, currentCursorPosition);
 
+                    //if (textBeforeCursor.trim() === '') {
+                        // Do nothing if current cursor position before text
+                    //} else {
+                    try {
+                        editor.document.replaceRange(template, beginningOfLine, currentCursorPosition);
+                    } catch (err) {}
+                } else {
+                    replaceSelectionOnSpaces();
+                }
+            }
+        } else {
+            // If document type not an HTML
+            replaceSelectionOnSpaces();
+        }
+    }
+
+    function expandWithTabForMenuIcon() {
+        var document = DocumentManager.getCurrentDocument();
+
+        if (document.getLanguage().getId() === 'html') {
+            var editor = EditorManager.getFocusedEditor();
+
+            // True if there's a text selection; false if not
+            if (editor.hasSelection()) {
+                // Expand abbreviation if there’s a selection
+                replaceSelection(editor);
+            } else {
+                // Get text from line
+                var currentCursorPosition = editor.getCursorPos();
+                var line = editor.document.getLine(currentCursorPosition.line);
+                var line = line.trim();
+
+                // Handle Tab key for known syntaxes only
+                if (line === 'html' || line === '<html' || line === 'html>' || line === '<html>') {
+                    var beginningOfLine = {line: currentCursorPosition.line, ch: 0};
+                    var textBeforeCursor = editor.document.getRange(beginningOfLine, currentCursorPosition);
+
                     if (textBeforeCursor.trim() === '') {
                         // Do nothing if current cursor position before text
+
                     } else {
                         try {
                             editor.document.replaceRange(template, beginningOfLine, currentCursorPosition);
                         } catch (err) {}
                     }
                 }
+                else {
+                    replaceSelection(editor);
+                }
             }
         } else {
-            window.alert('Document type should be HTML');
+            // If document type not an HTML
         }
     }
 
@@ -101,7 +151,7 @@ define(function (require, exports, module) {
         .attr('href', '#')
         .attr('title', 'HTML Boilerplate')
         .on('click', function () {
-            replaceSelectionForEmptyLine();
+            expandWithTabForMenuIcon();
         })
         .appendTo($('#main-toolbar .buttons'));
 });
