@@ -2,7 +2,7 @@
 
 ### 1.0.2
 - Added ability to expand the abbreviation with the "Tab" key
-- Split the HTML template from the main file
+- The HTML template was moved from the main.js
 
 ### 1.0.1
 - Added toolbar button.
