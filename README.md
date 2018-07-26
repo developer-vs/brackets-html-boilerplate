@@ -8,7 +8,7 @@
 
 <br>
 
-This is an extension for the <a href="http://brackets.io/">Brackets</a> code editor which allows you to insert an HTML template, similar to Sublime. 
+This is an extension for the <a href="http://brackets.io/">Brackets</a> text editor which allows you to insert an HTML template, similar to Sublime. 
 
 
 > Example of template
