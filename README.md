@@ -1,7 +1,12 @@
 # Welcome to the HTML Boilerplate an extension for the Brackets
 
 
-## HTML Boilerplate
+## HTML Boilerplate 
+
+[![Downloads](https://badges.ml/brackets-html-boilerplate/version.svg)](https://brackets-extension-badges.github.io/#brackets-html-boilerplate)
+[![Downloads](https://badges.ml/brackets-html-boilerplate/total.svg)](https://brackets-extension-badges.github.io/#brackets-html-boilerplate)
+
+<br>
 
 This is an extension for the <a href="http://brackets.io/">Brackets</a> code editor which allows you to insert an HTML template, similar to Sublime. 
 
