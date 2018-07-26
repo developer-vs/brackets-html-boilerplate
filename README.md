@@ -3,8 +3,10 @@
 
 ## HTML Boilerplate 
 
-[![Downloads](https://badges.ml/brackets-html-boilerplate/version.svg)](https://brackets-extension-badges.github.io/#brackets-html-boilerplate)
-[![Downloads](https://badges.ml/brackets-html-boilerplate/total.svg)](https://brackets-extension-badges.github.io/#brackets-html-boilerplate)
+[![Downloads](https://badges.ml/brackets-html-boilerplate/total.svg)](https://brackets-extension-badges.github.io#brackets-html-boilerplate)
+[![Downloads](https://badges.ml/brackets-html-boilerplate/week.svg)](https://brackets-extension-badges.github.io#brackets-html-boilerplate)
+[![Downloads](https://badges.ml/brackets-html-boilerplate/day.svg)](https://brackets-extension-badges.github.io#brackets-html-boilerplate)
+[![Version](https://badges.ml/brackets-html-boilerplate/version.svg)](https://brackets-extension-badges.github.io#brackets-html-boilerplate)
 
 <br>
 
