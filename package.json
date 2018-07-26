@@ -1,7 +1,7 @@
 {
     "name": "brackets-html-boilerplate",
     "title": "HTML Boilerplate",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "This is an extension which allows you to insert an HTML template, similar to Sublime. Type 'html' and hit the 'Tab' key",
     "homepage": "https://github.com/developer-vs/brackets_html_boilerplate",    
     "author": "Vladimir Semenovich (https://github.com/developer-vs)",

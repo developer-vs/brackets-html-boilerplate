@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.4
+#### Fixed
+- Unexpected behavior of the "Tab" key
+
 ## 1.0.3
 #### Fixed
 - Key Binding where document type not HTML
