@@ -8,7 +8,7 @@
 [![Downloads](https://badges.ml/brackets-html-boilerplate/day.svg)](https://brackets-extension-badges.github.io#brackets-html-boilerplate)
 [![Version](https://badges.ml/brackets-html-boilerplate/version.svg)](https://brackets-extension-badges.github.io#brackets-html-boilerplate)
 
-This is an extension for the [Brackets](http://brackets.io/ "Homepage of Brackets") text editor which allows you to insert an HTML template, similar to Sublime. 
+This is an extension for the [Brackets](http://brackets.io/ "Homepage of Brackets") text editor which allows you to insert an HTML template, similar to Sublime. Check the extension at [Brackets Extension Registry](https://registry.brackets.io/).
 
 > Example of template
 
