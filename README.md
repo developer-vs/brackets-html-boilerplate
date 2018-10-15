@@ -39,7 +39,7 @@ This is an extension for the [Brackets](http://brackets.io/ "Homepage of Bracket
 
 ## How to use
 
-1. Type 'html' and hit the 'Tab' key, or
+1. Type 'html' and hit the 'Tab' key, for MAC users use "Cmd (⌘) + ]" keys or
 2. Go to the menu **Edit** -> **HTML Boilerplate**, or
 3. Use Toolbar button, or
 4. Through Context Menu in the edit field area choose "HTML Boilerplate"
