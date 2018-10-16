@@ -90,7 +90,7 @@ define(function (require, exports, module) {
 
     var KEY_BINDINGS = [
         {key: 'Tab', platform: 'win'},
-        {key: 'Cmd + ]', platform: 'mac'},
+        {key: 'Cmd-]', platform: 'mac'},
         {key: 'Tab', platform: 'linux'}];
 
     // It will allow to use "Tab" key but not showing up the keys in the Menu
