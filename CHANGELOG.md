@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.6
+#### Fixed
+- Unexpected behavior of the "Tab" key for MAC users. MAC users should use "Cmd (⌘) + ]" keys.
+
 ## 1.0.5
 #### Fixed
 - Unexpected behavior of the "Tab" key for MAC users. MAC users should use "Cmd (⌘) + ]" keys.
